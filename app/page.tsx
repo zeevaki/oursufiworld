@@ -71,8 +71,8 @@ export default function HomePage() {
       </section>
 
       {/* What is this */}
-      <section className="py-20 px-6 max-w-3xl mx-auto w-full">
-        <h2 className="text-3xl font-black text-gray-800 mb-5">What Is OurSufiWorld?</h2>
+      <section className="py-24 px-6 max-w-3xl mx-auto w-full">
+        <h2 className="text-3xl font-black text-gray-800 mb-8">What Is OurSufiWorld?</h2>
         <p className="text-gray-600 font-semibold text-lg leading-relaxed mb-5">
           OurSufiWorld is a spiritual-activist platform that draws from the deepest wells of Sufi tradition — Iqbal&apos;s vision of the awakened self, Rumi&apos;s ocean of love, Bulleh Shah&apos;s defiance of orthodoxy, Kabir&apos;s bridge between faiths — and points that wisdom directly at the most urgent crises facing our planet and our people.
         </p>
@@ -84,8 +84,8 @@ export default function HomePage() {
       {/* Sufis preview */}
       <section className="bg-primary-light py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-black text-gray-800 text-center mb-2">The Sufis</h2>
-          <p className="text-gray-500 font-semibold text-center mb-10">
+          <h2 className="text-3xl font-black text-gray-800 text-center mb-4">The Sufis</h2>
+          <p className="text-gray-500 font-semibold text-center mb-12">
             Poets, mystics, wanderers — and the most radical thinkers of their time.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
@@ -114,8 +114,8 @@ export default function HomePage() {
 
       {/* Issues preview */}
       <section className="py-16 px-6 max-w-4xl mx-auto w-full">
-        <h2 className="text-3xl font-black text-gray-800 text-center mb-2">The Issues</h2>
-        <p className="text-gray-500 font-semibold text-center mb-10">
+        <h2 className="text-3xl font-black text-gray-800 text-center mb-4">The Issues</h2>
+        <p className="text-gray-500 font-semibold text-center mb-12">
           The Sufi response to the crises of our time.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -152,7 +152,7 @@ export default function HomePage() {
       {/* Our world family */}
       <section className="py-16 px-6 bg-primary-light">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-black text-gray-800 mb-3">Part of the OurWorld Family</h2>
+          <h2 className="text-2xl font-black text-gray-800 mb-5">Part of the OurWorld Family</h2>
           <p className="text-gray-600 font-semibold mb-8">
             OurSufiWorld is the spiritual home. Visit our sister sites for education, research, and classroom tools.
           </p>

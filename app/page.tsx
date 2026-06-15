@@ -1,23 +1,15 @@
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
+import { sufis } from "@/data/sufis";
 
 const issues = [
-  { emoji: "🌊", label: "Plastic in the Oceans" },
-  { emoji: "🌳", label: "Amazon Deforestation" },
-  { emoji: "☢️", label: "Weapons of Mass Destruction" },
-  { emoji: "⚔️", label: "Wars & Armed Conflict" },
-  { emoji: "🌡️", label: "Climate Change & Pollution" },
-  { emoji: "💊", label: "Drugs & Addiction" },
-  { emoji: "🏫", label: "A Broken Education System" },
-];
-
-const sufis = [
-  { name: "Allama Iqbal", origin: "Pakistan / India", emoji: "🌙" },
-  { name: "Rumi", origin: "Persia / Turkey", emoji: "🌀" },
-  { name: "Bulleh Shah", origin: "Punjab", emoji: "🌹" },
-  { name: "Kabir", origin: "India", emoji: "🪔" },
-  { name: "Rabia al-Adawiyya", origin: "Iraq", emoji: "💫" },
-  { name: "Shah Hussain", origin: "Lahore", emoji: "🎶" },
+  { label: "Plastic in the Oceans" },
+  { label: "Amazon Deforestation" },
+  { label: "Weapons of Mass Destruction" },
+  { label: "Wars & Armed Conflict" },
+  { label: "Climate Change & Pollution" },
+  { label: "Drugs & Addiction" },
+  { label: "A Broken Education System" },
 ];
 
 export default function HomePage() {
@@ -98,14 +90,14 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
             {sufis.map((s) => (
-              <div
-                key={s.name}
-                className="bg-white rounded-2xl shadow border border-primary-light p-5 text-center"
+              <Link
+                key={s.slug}
+                href={`/sufis/${s.slug}`}
+                className="bg-white rounded-2xl shadow border border-primary-light p-5 text-center hover:shadow-md transition-shadow group"
               >
-                <div className="text-4xl mb-2">{s.emoji}</div>
-                <div className="font-black text-gray-800 text-sm">{s.name}</div>
+                <div className="font-black text-gray-800 text-sm group-hover:text-primary transition-colors">{s.name}</div>
                 <div className="text-gray-400 text-xs font-semibold mt-1">{s.origin}</div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="text-center">
@@ -132,7 +124,6 @@ export default function HomePage() {
               key={issue.label}
               className="bg-white rounded-2xl shadow border border-gray-100 p-5 flex items-center gap-4"
             >
-              <span className="text-3xl">{issue.emoji}</span>
               <span className="font-black text-gray-700 text-sm">{issue.label}</span>
             </div>
           ))}

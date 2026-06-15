@@ -61,9 +61,9 @@ export const issues: Issue[] = [
     color: "#0D9488",
     stat: "The last decade was the hottest in 125,000 years of human history",
     reality: "The burning of fossil fuels has raised global temperatures by 1.2 degrees Celsius above pre-industrial levels. We are on track for 2.5 to 4 degrees of warming by 2100 — a transformation that will make large parts of the Earth uninhabitable, cause catastrophic flooding, drive mass extinction, and force hundreds of millions of people from their homes. The communities that will suffer most are the ones that produced the least carbon. This is not just a climate crisis. It is a justice crisis.",
-    sufiName: "Rabia al-Adawiyya",
-    sufiSlug: "rabia",
-    sufiResponse: "Rabia al-Adawiyya said: 'I love God with two loves — the love of longing and the love that He deserves.' The love that God deserves — that pure, unconditional love — is the love that does not extract from the beloved. The earth is not a resource. The air is not waste disposal. The Sufi tradition is a tradition of care — of tending, of protecting, of seeing the divine in the created world and therefore refusing to destroy it for convenience or profit. Climate action is not a political position. It is a spiritual obligation.",
+    sufiName: "Umar Khayyam",
+    sufiSlug: "umar-khayyam",
+    sufiResponse: "Umar Khayyam wrote: 'Into this Universe, and why not knowing, nor whence, like Water willy-nilly flowing.' We were placed on this earth without explanation and without instructions. What we were given is this: one world, extraordinary and irreplaceable, burning with life. Khayyam's entire philosophy is built on the preciousness of the present moment — and there is no present moment without a habitable earth. To burn the world for profit is to squander the only gift we were given. Climate action is not a political position. It is a spiritual obligation to the moment we inhabit.",
     actions: ["Reduce personal carbon footprint — but demand systemic change", "Support renewable energy legislation", "Hold fossil fuel companies legally accountable", "Center frontline communities in climate solutions"],
   },
   {

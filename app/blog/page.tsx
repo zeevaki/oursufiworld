@@ -1,35 +1,6 @@
 import NavBar from "@/components/NavBar";
 import Link from "next/link";
-
-const reflections = [
-  {
-    slug: "the-ocean-is-not-ours",
-    emoji: "🌊",
-    title: "The Ocean Is Not Ours to Fill",
-    subtitle: "Rumi saw the ocean as the infinite divine. What does it mean that we have filled it with plastic?",
-    date: "June 2026",
-    readTime: "4 min read",
-    color: "#0EA5E9",
-  },
-  {
-    slug: "iqbal-and-the-sleeping-self",
-    emoji: "🌙",
-    title: "Iqbal and the Sleeping Self",
-    subtitle: "The Poet of the East warned us a century ago. We are still asleep. Here is what he said — and why it matters now more than ever.",
-    date: "June 2026",
-    readTime: "5 min read",
-    color: "#6D28D9",
-  },
-  {
-    slug: "bulleh-shah-and-the-walls",
-    emoji: "🌹",
-    title: "Bulleh Shah and the Walls We Keep Building",
-    subtitle: "He tore down caste, creed, and convention in 18th-century Punjab. The same walls stand today. What would he say?",
-    date: "June 2026",
-    readTime: "5 min read",
-    color: "#DC2626",
-  },
-];
+import { reflections } from "@/data/reflections";
 
 export default function BlogPage() {
   return (
@@ -52,8 +23,11 @@ export default function BlogPage() {
               className="bg-white rounded-3xl shadow border border-gray-100 p-7 hover:shadow-md transition-shadow group"
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold px-3 py-1 rounded-full text-white" style={{ backgroundColor: post.color }}>
-                  Reflection
+                <span
+                  className="text-xs font-bold px-3 py-1 rounded-full text-white"
+                  style={{ backgroundColor: post.color }}
+                >
+                  {post.sufi}
                 </span>
                 <span className="text-xs text-gray-400 font-semibold ml-auto">{post.readTime}</span>
               </div>

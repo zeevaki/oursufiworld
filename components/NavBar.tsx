@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
+  { href: "/we-are-one", label: "We Are One" },
   { href: "/sufis", label: "The Sufis" },
   { href: "/issues", label: "World Issues" },
   { href: "/blog", label: "Reflections" },

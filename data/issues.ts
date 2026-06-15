@@ -78,6 +78,23 @@ export const issues: Issue[] = [
     actions: ["Treat addiction as a health issue, not a criminal one", "Fund mental health and community connection programs", "Oppose the criminalization of poverty and drug use", "Support harm reduction approaches — they save lives"],
   },
   {
+    slug: "religious-hatred",
+    title: "Religious Hatred",
+    color: "#7C3AED",
+    stat: "Over 80% of the world's population lives in countries with high religious hostilities or restrictions",
+    reality: "Religious hatred takes many forms — from mob violence triggered by a whispered accusation to laws that carry the death penalty for leaving a faith or questioning a text. Pakistan's blasphemy laws (Sections 295-B and 295-C) have been used to imprison and sentence to death Christians, Ahmadis, Hindus, Shia Muslims, and Sufis — often on fabricated charges, often followed by extrajudicial mob killings before any trial. Asia Bibi spent eight years on death row for allegedly insulting the Prophet in a dispute over a cup of water. Across the world, atheists and agnostics face imprisonment, torture, and execution for the crime of non-belief. In several countries, apostasy — leaving Islam — is legally punishable by death. Religious minorities in India, Myanmar, China, and across the Middle East face systemic persecution, ethnic cleansing, and erasure. And underneath all of it is the same logic: that God needs human beings to punish other human beings for their beliefs. The Sufi tradition has always known this logic is a lie.",
+    sufiName: "Bulleh Shah",
+    sufiSlug: "bulleh-shah",
+    sufiResponse: "Bulleh Shah was expelled from his own Muslim community for choosing a spiritual teacher of a lower caste. He was called a heretic, a kafir, an apostate. He was refused burial in his hometown. He knew exactly what religious hatred felt like — from the inside of the tradition doing the hating. And his response was not bitterness. It was one of the most radical acts in the history of religion: he kept loving. He wrote: 'Tear down the mosque, tear down the temple, tear down everything in sight — but do not break a human heart, for that is where God resides.' Blasphemy laws do not protect God. God does not need protection. They protect the powerful from being questioned. Bulleh Shah spent his entire life questioning them. He is still questioning them.",
+    actions: [
+      "Oppose blasphemy laws in Pakistan and everywhere they exist — they are instruments of persecution, not faith",
+      "Defend the rights of atheists, agnostics, and non-believers to exist without fear",
+      "Protect religious minorities — Ahmadis, Christians, Hindus, Sikhs — against mob violence and legal discrimination",
+      "Reject the idea that God requires human beings to punish other human beings for their beliefs",
+      "Support organizations defending freedom of conscience globally",
+    ],
+  },
+  {
     slug: "education",
     title: "A Broken Education System",
     color: "#D97706",

@@ -84,12 +84,12 @@ export default function SufisPage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(76,29,149,0.7)" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(6,95,70,0.62)" }} />
         <div className="relative z-10 max-w-3xl mx-auto">
           <h1 className="text-5xl font-black text-white mb-4" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.4)" }}>
             The Sufis
           </h1>
-          <p className="text-purple-200 text-lg font-semibold max-w-xl mx-auto">
+          <p className="text-white/85 text-lg font-semibold max-w-xl mx-auto">
             Poets, mystics, wanderers — and the most radical, courageous, loving thinkers our world has ever produced.
           </p>
         </div>
@@ -132,7 +132,7 @@ export default function SufisPage() {
         <p className="text-xl font-black text-white italic mb-3 max-w-2xl mx-auto">
           &ldquo;The Sufi is the one whose thought keeps pace with the foot — present in every step, not lost in the destination.&rdquo;
         </p>
-        <p className="text-purple-300 font-bold">— Ibn Arabi</p>
+        <p className="text-emerald-300 font-bold">— Ibn Arabi</p>
         <div className="mt-8">
           <Link href="/issues" className="inline-block text-white font-black px-6 py-3 rounded-2xl hover:opacity-90 transition-opacity" style={{ backgroundColor: "#D97706" }}>
             See How Their Wisdom Meets Today&apos;s Issues →
@@ -142,7 +142,7 @@ export default function SufisPage() {
 
       <footer className="bg-gray-900 text-gray-400 text-sm py-8 px-6 text-center">
         <p className="font-black text-white mb-1">OurSufiWorld</p>
-        <p className="italic text-purple-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
+        <p className="italic text-emerald-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
         <p>oursufiworld.com</p>
       </footer>
     </div>

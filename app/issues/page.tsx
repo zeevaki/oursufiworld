@@ -50,7 +50,7 @@ const issues = [
   {
     emoji: "💊",
     title: "Drugs & Addiction",
-    color: "#6D28D9",
+    color: "#065F46",
     stat: "Over 700,000 people die from drug overdoses globally every year",
     reality: "The global drug crisis is not a moral failure of individuals. It is a structural failure of societies that have left millions of people without belonging, without purpose, without hope. Research consistently shows that addiction is driven not by the drug itself but by disconnection — from community, from meaning, from self. The 'war on drugs' has criminalized poverty and mental illness while doing nothing to reduce addiction. Drug trafficking funds wars, corrupts governments, and destroys communities — most of all, the communities with the least power to resist it.",
     sufiResponse: "The Sufi masters understood intoxication. They wrote about it constantly — the wine of divine love, the tavern of the heart, the drunkenness of union with God. They understood the longing that drives people to substances: the longing for something larger than the small, painful self. Rumi wrote: 'There is a voice that doesn't use words. Listen.' Addiction is, in part, the failure to hear that voice. The Sufi answer is not prohibition. It is connection — to community, to meaning, to the divine spark within every person that no drug can permanently extinguish.",
@@ -74,19 +74,19 @@ export default function IssuesPage() {
 
       {/* Hero */}
       <section
-        className="relative px-6 py-24 text-center"
+        className="relative px-6 py-28 text-center"
         style={{
           backgroundImage: "url('/kashmir.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center bottom",
+          backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(120,53,15,0.7)" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(6,95,70,0.62)" }} />
         <div className="relative z-10 max-w-3xl mx-auto">
           <h1 className="text-5xl font-black text-white mb-4" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.4)" }}>
             World Issues
           </h1>
-          <p className="text-amber-200 text-lg font-semibold max-w-xl mx-auto">
+          <p className="text-white/85 text-lg font-semibold max-w-xl mx-auto">
             The Sufi response to the crises of our time — not withdrawal from the world, but a deeper, more loving engagement with it.
           </p>
         </div>
@@ -133,15 +133,15 @@ export default function IssuesPage() {
         <p className="text-xl font-black text-white italic mb-3 max-w-2xl mx-auto">
           &ldquo;Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.&rdquo;
         </p>
-        <p className="text-purple-300 font-bold mb-8">— Rumi</p>
-        <Link href="/blog" className="inline-block text-white font-black px-6 py-3 rounded-2xl hover:opacity-90 transition-opacity" style={{ backgroundColor: "#6D28D9" }}>
+        <p className="text-emerald-300 font-bold mb-8">— Rumi</p>
+        <Link href="/blog" className="inline-block text-white font-black px-6 py-3 rounded-2xl hover:opacity-90 transition-opacity" style={{ backgroundColor: "#065F46" }}>
           Read Our Reflections →
         </Link>
       </section>
 
       <footer className="bg-gray-900 text-gray-400 text-sm py-8 px-6 text-center">
         <p className="font-black text-white mb-1">OurSufiWorld</p>
-        <p className="italic text-purple-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
+        <p className="italic text-emerald-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
         <p>oursufiworld.com</p>
       </footer>
     </div>

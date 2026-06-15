@@ -15,9 +15,9 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white border-b border-purple-100 shadow-sm sticky top-0 z-50">
+    <nav className="w-full bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
       <div className="px-6 py-3 flex items-center justify-between">
-        <Link href="/" className="font-black text-xl" style={{ color: "#6D28D9" }} onClick={() => setOpen(false)}>
+        <Link href="/" className="font-black text-xl text-primary" onClick={() => setOpen(false)}>
           OurSufiWorld
         </Link>
 
@@ -29,10 +29,9 @@ export default function NavBar() {
               href={link.href}
               className={`px-4 py-2 rounded-xl font-bold text-sm transition-colors ${
                 pathname.startsWith(link.href)
-                  ? "text-white"
-                  : "text-gray-600 hover:text-purple-700 hover:bg-purple-50"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 hover:text-primary hover:bg-primary-light"
               }`}
-              style={pathname.startsWith(link.href) ? { backgroundColor: "#6D28D9" } : {}}
             >
               {link.label}
             </Link>
@@ -52,7 +51,7 @@ export default function NavBar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-purple-100 bg-white px-4 pb-4 flex flex-col gap-1">
+        <div className="md:hidden border-t border-gray-100 bg-white px-4 pb-4 flex flex-col gap-1">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -60,10 +59,9 @@ export default function NavBar() {
               onClick={() => setOpen(false)}
               className={`px-4 py-3 rounded-xl font-bold text-sm transition-colors ${
                 pathname.startsWith(link.href)
-                  ? "text-white"
-                  : "text-gray-600 hover:text-purple-700 hover:bg-purple-50"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 hover:text-primary hover:bg-primary-light"
               }`}
-              style={pathname.startsWith(link.href) ? { backgroundColor: "#6D28D9" } : {}}
             >
               {link.label}
             </Link>

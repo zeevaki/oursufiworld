@@ -35,9 +35,9 @@ export default function HomePage() {
           minHeight: "520px",
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(76,29,149,0.68)" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(6,95,70,0.62)" }} />
         <div className="relative z-10 max-w-3xl mx-auto">
-          <p className="text-purple-200 font-bold text-sm uppercase tracking-widest mb-4">
+          <p className="text-white/70 font-bold text-sm uppercase tracking-widest mb-4">
             Ancient Wisdom · Urgent Action
           </p>
           <h1
@@ -46,7 +46,7 @@ export default function HomePage() {
           >
             OurSufiWorld
           </h1>
-          <p className="text-2xl font-bold text-purple-200 mb-4 italic">
+          <p className="text-2xl font-bold text-white/80 mb-4 italic">
             &ldquo;Where the Divine Meets the People&rdquo;
           </p>
           <p className="text-white/85 text-lg font-semibold mb-10 max-w-xl mx-auto leading-relaxed">
@@ -55,8 +55,8 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/sufis"
-              className="bg-white font-black px-6 py-3 rounded-2xl hover:bg-purple-50 transition-colors shadow-md"
-              style={{ color: "#6D28D9" }}
+              className="bg-white font-black px-6 py-3 rounded-2xl hover:bg-primary-light transition-colors shadow-md"
+              style={{ color: "#065F46" }}
             >
               Meet the Sufis →
             </Link>
@@ -72,9 +72,9 @@ export default function HomePage() {
       </section>
 
       {/* Mission */}
-      <section className="py-6 px-6 text-center text-white" style={{ backgroundColor: "#6D28D9" }}>
+      <section className="py-6 px-6 text-center text-white" style={{ backgroundColor: "#065F46" }}>
         <p className="font-bold text-base max-w-2xl mx-auto">
-          🌍 Sufism does not ask you to leave the world. It asks you to love it enough to transform it.
+          Sufism does not ask you to leave the world. It asks you to love it enough to transform it.
         </p>
       </section>
 
@@ -90,7 +90,7 @@ export default function HomePage() {
       </section>
 
       {/* Sufis preview */}
-      <section className="bg-purple-50 py-16 px-6">
+      <section className="bg-primary-light py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-black text-gray-800 text-center mb-2">The Sufis</h2>
           <p className="text-gray-500 font-semibold text-center mb-10">
@@ -100,7 +100,7 @@ export default function HomePage() {
             {sufis.map((s) => (
               <div
                 key={s.name}
-                className="bg-white rounded-2xl shadow border border-purple-100 p-5 text-center"
+                className="bg-white rounded-2xl shadow border border-primary-light p-5 text-center"
               >
                 <div className="text-4xl mb-2">{s.emoji}</div>
                 <div className="font-black text-gray-800 text-sm">{s.name}</div>
@@ -112,7 +112,7 @@ export default function HomePage() {
             <Link
               href="/sufis"
               className="inline-block text-white font-black px-6 py-3 rounded-2xl hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: "#6D28D9" }}
+              style={{ backgroundColor: "#065F46" }}
             >
               Explore Their Lives & Wisdom →
             </Link>
@@ -149,17 +149,17 @@ export default function HomePage() {
       </section>
 
       {/* Quote */}
-      <section className="py-16 px-6" style={{ backgroundColor: "#1E1B4B" }}>
+      <section className="py-16 px-6" style={{ backgroundColor: "#0A2A1C" }}>
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-2xl font-black text-white italic mb-4 leading-relaxed">
             &ldquo;Do not be satisfied with the stories that come before you. Unfold your own myth.&rdquo;
           </p>
-          <p className="text-purple-300 font-bold">— Rumi</p>
+          <p className="text-emerald-300 font-bold">— Rumi</p>
         </div>
       </section>
 
       {/* Our world family */}
-      <section className="py-16 px-6 bg-purple-50">
+      <section className="py-16 px-6 bg-primary-light">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-black text-gray-800 mb-3">Part of the OurWorld Family</h2>
           <p className="text-gray-600 font-semibold mb-8">
@@ -167,19 +167,16 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <a href="https://ourteachingworld.com" target="_blank" rel="noopener noreferrer"
-              className="bg-white font-black px-5 py-3 rounded-2xl hover:shadow-md transition-shadow border border-purple-100 text-sm"
-              style={{ color: "#059669" }}>
-              🎓 OurTeachingWorld.com
+              className="bg-white text-primary font-black px-5 py-3 rounded-2xl hover:shadow-md transition-shadow border border-gray-100 text-sm">
+              OurTeachingWorld.com
             </a>
             <a href="https://ourreadingworld.com" target="_blank" rel="noopener noreferrer"
-              className="bg-white font-black px-5 py-3 rounded-2xl hover:shadow-md transition-shadow border border-purple-100 text-sm"
-              style={{ color: "#0EA5E9" }}>
-              📖 OurReadingWorld.com
+              className="bg-white text-primary font-black px-5 py-3 rounded-2xl hover:shadow-md transition-shadow border border-gray-100 text-sm">
+              OurReadingWorld.com
             </a>
             <a href="https://ourmathworld.com" target="_blank" rel="noopener noreferrer"
-              className="bg-white font-black px-5 py-3 rounded-2xl hover:shadow-md transition-shadow border border-purple-100 text-sm"
-              style={{ color: "#059669" }}>
-              🔢 OurMathWorld.com
+              className="bg-white text-primary font-black px-5 py-3 rounded-2xl hover:shadow-md transition-shadow border border-gray-100 text-sm">
+              OurMathWorld.com
             </a>
           </div>
         </div>
@@ -187,7 +184,7 @@ export default function HomePage() {
 
       <footer className="bg-gray-900 text-gray-400 text-sm py-8 px-6 text-center">
         <p className="font-black text-white mb-1">OurSufiWorld</p>
-        <p className="italic text-purple-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
+        <p className="italic text-emerald-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
         <p>oursufiworld.com</p>
       </footer>
     </div>

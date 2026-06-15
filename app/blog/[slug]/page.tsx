@@ -94,7 +94,7 @@ export default async function ReflectionPage({
                   className="bg-white rounded-2xl shadow border border-gray-100 p-5 hover:shadow-md transition-shadow group flex gap-4 items-start"
                 >
                   <div>
-                    <h3 className="font-black text-gray-800 text-sm group-hover:text-purple-700 transition-colors mb-1">
+                    <h3 className="font-black text-gray-800 text-sm group-hover:text-primary transition-colors mb-1">
                       {r.title}
                     </h3>
                     <p className="text-gray-400 text-xs font-semibold">{r.sufi} · {r.readTime}</p>
@@ -108,7 +108,7 @@ export default async function ReflectionPage({
 
       <footer className="bg-gray-900 text-gray-400 text-sm py-8 px-6 text-center">
         <p className="font-black text-white mb-1">OurSufiWorld</p>
-        <p className="italic text-purple-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
+        <p className="italic text-emerald-300 mb-1">&ldquo;Where the Divine Meets the People&rdquo;</p>
         <p>oursufiworld.com</p>
       </footer>
     </div>

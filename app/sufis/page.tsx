@@ -33,8 +33,33 @@ export default function SufisPage() {
         </div>
       </section>
 
+      {/* Featured: Sufi in Action */}
+      <section className="py-12 px-6 max-w-5xl mx-auto w-full">
+        <Link
+          href="/edhi"
+          className="group block bg-white rounded-3xl shadow border-2 overflow-hidden hover:shadow-lg transition-shadow"
+          style={{ borderColor: "#065F46" }}
+        >
+          <div className="p-8 text-center">
+            <p className="text-xs font-black uppercase tracking-widest mb-3" style={{ color: "#065F46" }}>
+              A Sufi In Action
+            </p>
+            <h2 className="text-3xl font-black text-gray-800 mb-3 group-hover:opacity-80 transition-opacity">
+              Abdul Sattar Edhi
+            </h2>
+            <p className="text-gray-600 font-semibold text-base max-w-xl mx-auto mb-5 leading-relaxed">
+              He wrote no poetry and had little formal schooling. He simply did what his mother taught him: if you want to love God, do good for humanity. He built Pakistan's largest humanitarian organization on that one lesson.
+            </p>
+            <p className="text-sm font-black uppercase tracking-widest group-hover:underline" style={{ color: "#065F46" }}>
+              Read his story →
+            </p>
+          </div>
+        </Link>
+      </section>
+
       {/* Cards grid */}
-      <section className="py-16 px-6 max-w-5xl mx-auto w-full">
+      <section className="py-4 px-6 max-w-5xl mx-auto w-full">
+        <h2 className="text-2xl font-black text-gray-800 text-center mb-10">The Poet-Sufis</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {sufis.map((s) => (
             <Link

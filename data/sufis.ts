@@ -9,6 +9,8 @@ export type Sufi = {
   bio: string;
   relevance: string;
   couplets: { text: string; source: string; translation?: string }[];
+  lectures?: { number: number; title: string; summary: string }[];
+  faith?: { title: string; body: string; stages: { label: string; description: string }[] };
 };
 
 export const sufis: Sufi[] = [
@@ -44,6 +46,56 @@ export const sufis: Sufi[] = [
         translation: "Dive into your own soul and find the secret of life. If you will not be mine, so be it — but at least be your own.",
       },
     ],
+    lectures: [
+      {
+        number: 1,
+        title: "Knowledge and Religious Experience",
+        summary: "The Quran does not ask you to close your eyes and believe. It asks you to look at the bee, the wind, the stars — as signs. Iqbal argues that religious experience is a genuine form of knowledge, as rigorous as scientific observation. The mystic who encounters the divine is an empiricist; the Sufi tradition is a centuries-long laboratory of the inner life.",
+      },
+      {
+        number: 2,
+        title: "The Philosophical Test of the Revelations of Religious Experience",
+        summary: "The classical proofs for God — cosmological, ontological — are dead ends. Iqbal turns instead to modern physics: Whitehead, Bergson, Einstein. Their picture of reality — dynamic, interconnected, ceaselessly creative — matches what Islamic metaphysics always sensed. At the heart of this reality: not abstract substance, but a Supreme Ego whose creative will sustains all existence.",
+      },
+      {
+        number: 3,
+        title: "The Conception of God and the Meaning of Prayer",
+        summary: "God is not an abstraction — He is Allah, a Self who knows and wills. The Fall of Adam was not moral catastrophe; it was the birth of human self-consciousness, the first flash of freedom. Prayer is not petition; it is the finite self reaching toward the Infinite — and discovering, in that touch, that it was always held within it.",
+      },
+      {
+        number: 4,
+        title: "The Human Ego — His Freedom and Immortality",
+        summary: "The self is real, free, and capable of immortality — but immortality must be earned through action, not inherited through doctrine. Heaven and Hell are states of character, not locations. Destiny is time experienced from within, not fate imposed from outside. And Iman — true faith — is not passive belief but living assurance born from a direct encounter with reality.",
+      },
+      {
+        number: 5,
+        title: "The Spirit of Muslim Culture",
+        summary: "Islam, not Greece, gave birth to the scientific method. The Quran's insistence on observation produced history's first inductive thinkers: Ibn-i-Khaldun wrote the world's first philosophy of history; Al-Beruni was the first systematic anthropologist; Muslim universities in Spain trained the scientists of Renaissance Europe. Roger Bacon learned empiricism from Arab scholars. The West has rarely admitted this debt.",
+      },
+      {
+        number: 6,
+        title: "The Principle of Movement in the Structure of Islam",
+        summary: "Ijtihad — independent legal reasoning — is Islam's built-in engine of evolution. Its closure in the early centuries was a political accident, not a divine command. Turkey's modern legal reforms are its reassertion. Islam's true aspiration is not nationalism or empire but a League of Nations bound by spiritual values — democracy as the political expression of the spiritual equality of all human beings.",
+      },
+    ],
+    faith: {
+      title: "What Iqbal Means by Faith",
+      body: "Iqbal draws a distinction most religious thought never dares make: between faith as proposition and faith as experience. To merely accept that God exists is the weakest form of Iman — it demands nothing of the self, changes nothing in the soul. True Iman is what he calls 'living assurance begotten of a rare experience' — a direct encounter with reality that reshapes the self from within. It cannot be argued into. It must be lived into.",
+      stages: [
+        {
+          label: "Passive Belief",
+          description: "Accepting religious propositions without personal encounter. The self remains unchanged. Iqbal is precise: 'Iman is not merely a passive belief in one or more propositions of a certain kind.' This is the minimum — the starting point, not the destination.",
+        },
+        {
+          label: "Living Assurance",
+          description: "Faith born from direct experience of reality — not emotion, but a cognitive grasp of life as an undivided whole. This is the Iman the Quran calls toward. It requires strength of character to hold the Infinite in view without flinching. It expresses itself not in creeds but in how you live.",
+        },
+        {
+          label: "Unitive Experience",
+          description: "The peak: the finite self discovers it is held within the Infinite. The great Sufis who reached it spoke in paradox — Hallaj: 'I am the creative truth.' Ba Yazid: 'Glory to me!' Not blasphemy — the dissolution of the wall between the finite and the divine, the moment the drop knows it is the ocean.",
+        },
+      ],
+    },
   },
   {
     slug: "rumi",

@@ -79,6 +79,70 @@ export default async function SufiPage({
 
         <hr className="border-gray-100 mb-12" />
 
+        {/* Six Lectures */}
+        {sufi.lectures && (
+          <>
+            <section className="mb-12">
+              <h2 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-2">
+                The Six Lectures
+              </h2>
+              <p className="text-gray-400 text-sm font-semibold italic mb-8">
+                The Reconstruction of Religious Thought in Islam, 1930
+              </p>
+              <div className="flex flex-col gap-6">
+                {sufi.lectures.map((lecture) => (
+                  <div key={lecture.number} className="flex gap-4">
+                    <div
+                      className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-black text-sm text-white mt-0.5"
+                      style={{ backgroundColor: sufi.color }}
+                    >
+                      {lecture.number}
+                    </div>
+                    <div>
+                      <h3 className="font-black text-gray-800 text-sm mb-1">{lecture.title}</h3>
+                      <p className="text-gray-600 font-semibold text-sm leading-relaxed">{lecture.summary}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <hr className="border-gray-100 mb-12" />
+          </>
+        )}
+
+        {/* On Iman & Faith */}
+        {sufi.faith && (
+          <>
+            <section className="mb-12">
+              <h2 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-4">
+                {sufi.faith.title}
+              </h2>
+              <p className="text-gray-700 font-semibold text-base leading-relaxed mb-8">
+                {sufi.faith.body}
+              </p>
+              <div className="flex flex-col gap-4">
+                {sufi.faith.stages.map((stage, i) => (
+                  <div key={i} className="rounded-2xl p-6" style={{ backgroundColor: sufi.color + "10" }}>
+                    <div className="flex items-center gap-3 mb-2">
+                      <span
+                        className="font-black text-xs uppercase tracking-widest"
+                        style={{ color: sufi.color }}
+                      >
+                        Stage {i + 1}
+                      </span>
+                      <span className="font-black text-gray-800 text-sm">{stage.label}</span>
+                    </div>
+                    <p className="text-gray-600 font-semibold text-sm leading-relaxed">
+                      {stage.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <hr className="border-gray-100 mb-12" />
+          </>
+        )}
+
         {/* Couplets */}
         <section className="mb-12">
           <h2 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-8">

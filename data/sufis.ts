@@ -19,7 +19,7 @@ export const sufis: Sufi[] = [
     origin: "Sialkot, Punjab",
     color: "#065F46",
     tagline: "The Poet of the East — who dreamed of a humanity awakened to its divine potential",
-    quote: "Rise, for the dawn has broken. The world awaits your awakening. Do not sleep — the caravan has already moved on.",
+    quote: "Beyond the stars, there are other worlds still. There are still more trials of love ahead.",
     bio: "Muhammad Iqbal was a poet, philosopher, and visionary whose work transcended nations, religions, and centuries. Writing in Urdu and Persian, he revived the Sufi concept of the Khudi — the self — not as ego, but as the divine spark within every human being that, when fully realized, can transform the world. He warned against blind nationalism, against the slavery of materialism, against the division of humanity into competing tribes. His Shikwa and Jawab-e-Shikwa are conversations with God so honest they were considered scandalous. His Bang-e-Dra is a call to a sleeping civilization. He believed that a human being who truly knows themselves knows God — and a humanity that truly knows itself needs no weapons, no borders, no wars.",
     relevance: "Iqbal's vision of the awakened self is the direct antidote to the passive consumerism that drives climate destruction, to the tribal nationalism that produces war, and to the hollow educational systems that produce workers instead of thinkers. He asked: what does a fully realized human being look like? OurSufiWorld asks the same question.",
     couplets: [
